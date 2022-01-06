@@ -32,7 +32,11 @@ export default class SimpleSlider extends Component {
     return (
       <div>
         <h2> Single Item</h2>
-        <Slider {...settings}>{this.makeSliderChildren()}</Slider>
+        <Slider {...settings}>
+          <div>
+            <h3>{i + 1}</h3>
+          </div>
+        </Slider>
       </div>
     );
   }

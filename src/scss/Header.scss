@@ -1,0 +1,64 @@
+// https://velog.io/@ji-yeong/React%EC%97%90%EC%84%9C-SassScss-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+.header {
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  h1 {
+    display: inline-block; /* 글높이, 글입력칸의 높이 */
+    font-size: 30px;
+    // background-image: url(../img/hoban_CI_eng_new.png);
+    background-size: contain;
+    width: 134px;
+    height: 80px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    text-align: center;
+    a {
+      display: inline-block;
+      text-indent: -2000%;
+      width: 134px;
+      height: 80px;
+    }
+  }
+}
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  height: 120px;
+  padding: 0 3vw;
+  box-sizing: border-box;
+  .nav-group-1 {
+    font-size: 1.25em;
+    margin-top: 50px;
+    float: left;
+  }
+  .nav-group-2 {
+    font-size: 1.25em;
+    margin-top: 50px;
+    float: right;
+  }
+  .nav-list {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+  .nav-list-title {
+    padding-right: 30px;
+    // color: #fff;
+    text-align: left;
+  }
+  .nav-list-subgroup {
+    padding-top: 10px;
+    li {
+      margin-top: 5px;
+    }
+    a {
+      font-size: 14px;
+      padding: 5px 0 !important;
+      display: block;
+      line-height: 1.5;
+    }
+  }
+}
