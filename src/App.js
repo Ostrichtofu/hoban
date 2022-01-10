@@ -1,6 +1,7 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
@@ -8,6 +9,9 @@ import "./App.css";
 import SimpleSlider from "./components/Slider.js";
 
 function App() {
+
+  
+
   return (
     <div>
       <div className="App">

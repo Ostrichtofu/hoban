@@ -38,11 +38,25 @@
 //   }
 // }
 
+
 import React from "react";
 import Slider from "react-slick";
-import makeSliderChildren from "./SliderChildren.js";
 
 function SimpleSlider(){
+  
+  function makeSliderChildren(){
+    let retval = [];
+    for (let i = 0; i <6; ++i) {
+      retval.push(
+        <div key={i * Math.random()}>
+          <h3>{i + 1}</h3>
+        </div>
+      );
+    }
+    
+    return retval;
+  }
+
   const settings = {
     dots: true,
     infinite: true,
@@ -53,7 +67,9 @@ function SimpleSlider(){
     return (
       <div>
         <h2> Single Item</h2>
-        <Slider {...settings}></Slider>
+        <Slider {...settings}>
+          {makeSliderChildren()}
+        </Slider>
       </div>
     );
   }
