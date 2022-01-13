@@ -7,16 +7,14 @@ import "./scss/Reset.css";
 
 import MainSlider from "./components/Slider";
 import Header from "./components/Header";
-import ContentsBox from "./components/ContentsBox";
+import ContentsTitle from "./components/main/ContentsTitle";
 
 function App() {
   return (
     <div>
       <Header />
       <MainSlider />
-      <div className="mainContents">
-        {ContentsBox}
-      </div>
+      <ContentsTitle />
     </div>
   );
 }
