@@ -5,14 +5,18 @@ import React from "react";
 import "./App.scss";
 import "./scss/Reset.css";
 
-import SimpleSlider from "./components/Slider.js";
-import Header from "./components/Header.js";
+import MainSlider from "./components/Slider";
+import Header from "./components/Header";
+import ContentsBox from "./components/ContentsBox";
 
 function App() {
   return (
     <div>
       <Header />
-      <SimpleSlider count={5} />
+      <MainSlider />
+      <div className="mainContents">
+        {ContentsBox}
+      </div>
     </div>
   );
 }
