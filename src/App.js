@@ -5,16 +5,18 @@ import React from "react";
 import "./App.scss";
 import "./scss/Reset.css";
 
-import MainSlider from "./components/Slider";
 import Header from "./components/Header";
-import ContentsTitle from "./components/main/ContentsTitle";
+import MainSlider from "./components/main/MainSlider";
+import Contents from "./components/main/Contents";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Header />
       <MainSlider />
-      <ContentsTitle />
+      <Contents />
+      <Footer />
     </div>
   );
 }

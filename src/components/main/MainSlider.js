@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import "../../scss/MainSlider.scss";
 
 const silder_PROPS = [
   {
@@ -66,10 +67,12 @@ function MainSlider() {
     autoplay: true,
   };
   return (
-    <div className="swiper-wrapper">
-      <Slider {...settings} className="swiper-slide">
-        {makeSliderChildren(silder_PROPS)}
-      </Slider>
+    <div className="swiper-container">
+      <div className="swiper-wrapper">
+        <Slider {...settings} className="swiper-slide">
+          {makeSliderChildren(silder_PROPS)}
+        </Slider>
+      </div>
     </div>
   );
 }
