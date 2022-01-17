@@ -1,23 +1,16 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import React from "react";
+import React, { Component } from "react";
 import "./App.scss";
 import "./scss/Reset.css";
-
-import Header from "./components/Header";
-import MainSlider from "./components/main/MainSlider";
-import Contents from "./components/main/Contents";
-import Footer from "./components/Footer";
-
-function App() {
+import MainPage from "./page/mainPage";
+import { Route, Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+export default function App() {
   return (
-    <div>
-      <Header />
-      <MainSlider />
-      <Contents />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Route exact path="/main" component={MainPage} />
+    </BrowserRouter>
   );
 }
-export default App;
