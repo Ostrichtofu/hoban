@@ -45,72 +45,13 @@ const contents_PROPS = {
       subMenus: ["인사도", "복리후생", "채용가이드", "채용공고", "채용문의"],
     },
     {
-      title: "강아지",
-      subMenus: ["말티즈", "비숑", "포메", "치와와", "코카스파니엘"],
+      title: "검색",
+      subMenus: [],
     },
   ],
 };
 
 function Header() {
-  /*function contentsSubList() {
-    if (contents_PROPS.index[0]) {
-      return contents_PROPS.Left.map((element) => {
-        return (
-          <li key={element.subMenus.length}>
-            <a>{element.subMenus}</a>
-          </li>
-        );
-      })
-    }
-    return contents_PROPS.Right.map((element) => {
-      return (
-        <li key={element.subMenus.length}>
-          <a>{element.subMenus}</a>
-        </li>
-      );
-    });
-  }*/
-
-  /*function contentsList() {
-    if (contents_PROPS.index[0]) {
-      return contents_PROPS.Left.map((element, index) => {
-        return (
-          <li className="nav-list" key={index}>
-            <a className="nav-list-title">{element.title}</a>
-            <ul className="nav-list-subgroup">{contentsSubList()}</ul>
-          </li>
-        );
-      });
-    }
-    return contents_PROPS.Right.map((element, index) => {
-      return (
-        <li className="nav-list" key={index}>
-          <a className="nav-list-title">{element.title}</a>
-          <ul className="nav-list-subgroup">{contentsSubList()}</ul>
-        </li>
-      );
-    });
-  }*/
-
-  function renderMenu(contentsArr) {
-    return contentsArr.map((element, contentIndex) => (
-      //메뉴 종류에 대한 순환
-      <li className="nav-list" key={contentIndex}>
-        <a className="nav-list-title">{element.title}</a>
-        <ul className="nav-list-subgroup">
-          {element.subMenus.map((subMenu, subMenuIndex) => {
-            //세부 메뉴에 대한 순환
-            return (
-              <li key={contentIndex * 10 + subMenuIndex}>
-                <a>{subMenu}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </li>
-    ));
-  }
-
   const renderMainMenus = (contentsArr) => {
     return contentsArr.map((element, mainMenuIndex) => (
       <li className="nav-list" key={mainMenuIndex}>
