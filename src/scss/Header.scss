@@ -7,7 +7,7 @@
   h1 {
     display: inline-block; /* 글높이, 글입력칸의 높이 */
     font-size: 30px;
-    // background-image: url(../img/hoban_CI_eng_new.png);
+    background-image: url(../img/hoban_CI_eng_new.png);
     background-size: contain;
     width: 134px;
     height: 80px;
@@ -46,8 +46,16 @@
   }
   .nav-list-title {
     padding-right: 30px;
-    // color: #fff;
+    color: #fff;
     text-align: left;
+  }
+  .nav-list-title::before {
+    content: "";
+    float: left;
+    height: 22px;
+    position: relative;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    left: -14px;
   }
   .nav-list-subgroup {
     padding-top: 10px;

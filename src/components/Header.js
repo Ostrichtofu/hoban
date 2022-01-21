@@ -6,6 +6,7 @@ const contents_PROPS = {
     {
       title: "회사소개",
       subMenus: ["기업이념", "기업연혁", "CEO인사말", "그룹사현황", "오시는길"],
+      URL: "http://ostrichtofu.com/portfolio/hoban/sustainability.html",
     },
     {
       title: "사업영역",
@@ -18,16 +19,19 @@ const contents_PROPS = {
         "스포츠레저",
         "방송미디어",
       ],
+      URL: "http://ostrichtofu.com/portfolio/hoban/sustainability.html",
     },
     {
       title: "지속가능경영",
       subMenus: ["윤리경영소개", "윤리경영활동", "사이버신문고", "동반성장"],
+      URL: "http://ostrichtofu.com/portfolio/hoban/sustainability.html",
     },
   ],
   right: [
     {
       title: "사회공헌",
       subMenus: ["호반사랑나눔", "호반공익법인"],
+      URL: "http://ostrichtofu.com/portfolio/hoban/sustainability.html",
     },
     {
       title: "홍보센터",
@@ -39,14 +43,17 @@ const contents_PROPS = {
         "신사옥홍보관",
         "30주년홍보관",
       ],
+      URL: "http://ostrichtofu.com/portfolio/hoban/sustainability.html",
     },
     {
       title: "인재채용",
       subMenus: ["인사도", "복리후생", "채용가이드", "채용공고", "채용문의"],
+      URL: "http://ostrichtofu.com/portfolio/hoban/sustainability.html",
     },
     {
       title: "검색",
       subMenus: [],
+      URL: "http://ostrichtofu.com/portfolio/hoban/sustainability.html",
     },
   ],
 };
@@ -55,7 +62,9 @@ function Header() {
   const renderMainMenus = (contentsArr) => {
     return contentsArr.map((element, mainMenuIndex) => (
       <li className="nav-list" key={mainMenuIndex}>
-        <a className="nav-list-title">{element.title}</a>
+        <a className="nav-list-title" href={element.URL}>
+          {element.title}
+        </a>
         <ul className="nav-list-subgroup">
           {renderSubMenus(element.subMenus, mainMenuIndex)}
         </ul>
