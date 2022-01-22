@@ -4,69 +4,84 @@
   position: absolute;
   width: 100%;
   z-index: 11;
-  h1 {
-    display: inline-block; /* 글높이, 글입력칸의 높이 */
-    font-size: 30px;
-    background-image: url(../img/hoban_CI_eng_new.png);
-    background-size: contain;
-    width: 134px;
-    height: 80px;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    text-align: center;
-    a {
-      display: inline-block;
-      text-indent: -2000%;
-      width: 134px;
-      height: 80px;
-    }
-  }
 }
 .nav {
   max-width: 1280px;
   margin: 0 auto;
+  margin-top: 36px;
   text-align: center;
-  height: 120px;
   padding: 0 3vw;
   box-sizing: border-box;
-  .nav-group-1 {
-    font-size: 1.25em;
-    margin-top: 50px;
-    float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  font-size: 16px;
+  h1 {
+    display: block;
+    font-size: 16px;
+    background-image: url(../img/hoban_CI_eng.png);
+    background-size: contain;
+    width: 144px;
+    height: 28px;
+    background-repeat: no-repeat;
+    text-align: center;
+    a {
+      display: inline-block;
+      text-indent: -2000%;
+      width: 100%;
+      height: 100%;
+    }
   }
-  .nav-group-2 {
-    font-size: 1.25em;
-    margin-top: 50px;
-    float: right;
+  .nav-group {
+    font-size: 1.1em;
   }
   .nav-list {
     display: inline-block;
     vertical-align: top;
     text-align: left;
+    cursor: pointer;
+    :hover {
+      color: #ee7500;
+    }
   }
   .nav-list-title {
-    padding-right: 30px;
+    padding: 0 15px;
     color: #fff;
     text-align: left;
   }
   .nav-list-title::before {
     content: "";
-    float: left;
     height: 22px;
     position: relative;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
     left: -14px;
   }
-  .nav-list-subgroup {
-    padding-top: 10px;
-    li {
-      margin-top: 5px;
-    }
-    a {
-      font-size: 14px;
-      padding: 5px 0 !important;
-      display: block;
-      line-height: 1.5;
-    }
+  .nav-list:nth-child(1) .nav-list-title {
+    padding-left: 0px;
   }
+  .nav-list:nth-last-child(1) .nav-list-title {
+    padding-right: 0px;
+  }
+  .nav-list:nth-child(1) .nav-list-title::before {
+    display: none;
+  }
+  .searchBtn {
+    display: block;
+    background-image: url(../img/find_icn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-position: right;
+    text-indent: -9999px;
+    box-sizing: border-box;
+    padding-right: 0;
+    cursor: pointer;
+  }
+  .searchBtn:hover {
+    display: block;
+    background-image: url(../img/find_icn_hover.png);
+  }
+  // .nav-list-subgroup
 }
