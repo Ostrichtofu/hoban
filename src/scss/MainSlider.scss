@@ -2,6 +2,8 @@
   max-height: 880px;
   /*! width: 1900px; */
   background-image: url(../img/01_M_SCREEN_MOV_ALTER_22_2019031393028454.jpg);
+  background-size: cover;
+  background-position: center center;
   overflow: hidden;
   background-attachment: fixed;
   padding-bottom: 162px;
@@ -20,12 +22,13 @@
   color: #fff;
 }
 .swiper-wrapper div h2 {
-  max-width: 640px;
-  font-size: 7vw;
+  max-width: 1080px;
+  font-size: 6vw;
   font-weight: bold;
   text-transform: uppercase;
   word-break: keep-all;
   color: #fff;
+  padding-right: 10vw;
 }
 .swiper-wrapper div p {
   font-size: 1.3em;
