@@ -8,34 +8,39 @@ const silder_PROPS = [
     category: "HOBAN GROUP",
     mainTitle: "Innovation",
     subTitle: "고객만족을 넘어 고객가치를 꿈꾸는 기업, HOBAN",
-    background: "/static/media/mainBG_1.jpg",
+    background:
+      "https://github.com/Ostrichtofu/hoban/blob/master/src/img/mainBG_1.jpg?raw=true",
   },
   {
     category: "HOBAN SUMMIT & VERTIUM",
     mainTitle: "Professional",
     subTitle:
       "전문가가 만드는 더 특별한 행복 호반의 명작, 호반 써밋 & 베르디움",
-    background: "/static/media/mainBG_2.jpg",
+    background:
+      "https://github.com/Ostrichtofu/hoban/blob/master/src/img/mainBG_2.jpg?raw=true",
   },
   {
     category: "AVENUE FRANCE",
     mainTitle: "Enjoy",
     subTitle:
       "도심속에서 만나는 프랑스의 감성과 자유로움, 유럽형 복합문화공간 아브뉴프랑",
-    background: "/static/media/mainBG_3.jpg",
+    background:
+      "https://github.com/Ostrichtofu/hoban/blob/master/src/img/mainBG_3.jpg?raw=true",
   },
   {
     category: "HOBAN GOLF",
     mainTitle: "Healing",
     subTitle:
       "자연과 하나되는 휴식과 즐거움, 당신의 몸과 마음의 여유를 느껴보세요",
-    background: "/static/media/mainBG_4.jpg",
+    background:
+      "https://github.com/Ostrichtofu/hoban/blob/master/src/img/mainBG_4.jpg?raw=true",
   },
   {
     category: "SOCIAL CONTRIBUTION",
     mainTitle: "Partner for Happiness",
     subTitle: "더불어 사는 행복한 세상, 나누며 커가는 행복한 미래",
-    background: "/static/media/mainBG_5.jpg",
+    background:
+      "https://github.com/Ostrichtofu/hoban/blob/master/src/img/mainBG_5.jpg?raw=true",
   },
 ];
 
@@ -78,16 +83,17 @@ function MainSlider() {
           {...settings}
           asNavFor={nav2}
           ref={(slider) => setNav1(slider)}
-          className="swiper-slide"
+          className="swiper-slide-contents"
         >
           {makeSliderChildren(silder_PROPS)}
         </Slider>
         <Slider
           asNavFor={nav1}
           ref={(slider) => setNav2(slider)}
-          slidesToShow={3}
+          slidesToShow={1}
           swipeToSlide={true}
           focusOnSelect={true}
+          className="swiper-slide-BG"
         >
           {makeSliderBGChildren(silder_PROPS)}
         </Slider>

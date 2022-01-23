@@ -1,11 +1,10 @@
 .swiper-container {
-  max-height: 880px;
   /*! width: 1900px; */
-  // background-image: url(../img/mainBG_1.jpg);
-  background-size: cover;
-  background-position: center center;
+  // background-size: cover;
+  // background-position: center center;
+  // overflow: hidden;
+  // background-attachment: fixed;
   overflow: hidden;
-  background-attachment: fixed;
   padding-bottom: 162px;
   background-color: #eee;
 }
@@ -14,6 +13,7 @@
   padding-left: 10vw;
   margin-top: 200px;
   box-sizing: border-box;
+  position: relative;
 }
 .mainTitle .swiper-wrapper div strong {
   font-size: 1.6vw;
@@ -55,3 +55,6 @@
 .mainTitle .slick-dots li button:before {
   color: white !important;
 }
+// .swiper-slide-BG {
+//   max-height: 880px;
+// }
