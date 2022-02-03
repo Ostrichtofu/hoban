@@ -9,7 +9,7 @@ const silder_PROPS = [
     mainTitle: "Innovation",
     subTitle: "고객만족을 넘어 고객가치를 꿈꾸는 기업, HOBAN",
     background:
-      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hobanMainBG_1.jpg",
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/hobanMainBG_1.jpg",
   },
   {
     category: "HOBAN SUMMIT & VERTIUM",
@@ -17,7 +17,7 @@ const silder_PROPS = [
     subTitle:
       "전문가가 만드는 더 특별한 행복 호반의 명작, 호반 써밋 & 베르디움",
     background:
-      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hobanMainBG_2.jpg",
+      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/hobanMainBG_2.jpg",
   },
   {
     category: "AVENUE FRANCE",
@@ -25,7 +25,7 @@ const silder_PROPS = [
     subTitle:
       "도심속에서 만나는 프랑스의 감성과 자유로움, 유럽형 복합문화공간 아브뉴프랑",
     background:
-      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hobanMainBG_3.jpg",
+      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/hobanMainBG_3.jpg",
   },
   {
     category: "HOBAN GOLF",
@@ -33,14 +33,14 @@ const silder_PROPS = [
     subTitle:
       "자연과 하나되는 휴식과 즐거움, 당신의 몸과 마음의 여유를 느껴보세요",
     background:
-      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hobanMainBG_4.jpg",
+      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/hobanMainBG_4.jpg",
   },
   {
     category: "SOCIAL CONTRIBUTION",
     mainTitle: "Partner for Happiness",
     subTitle: "더불어 사는 행복한 세상, 나누며 커가는 행복한 미래",
     background:
-      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hobanMainBG_5.jpg",
+      " https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/hobanMainBG_5.jpg",
   },
 ];
 
