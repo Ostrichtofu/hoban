@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "../../scss/MainSlider.scss";
 
@@ -45,11 +45,6 @@ const silder_PROPS = [
 ];
 
 function MainSlider() {
-  const slick = useRef(null);
-  useEffect(() => {
-    console.log(slick.innerSlider);
-  }, []);
-
   function makeSliderChildren(sliderArr) {
     return sliderArr.map((element, sliderIndex) => (
       <div key={sliderIndex} className="titleContents">
@@ -72,14 +67,13 @@ function MainSlider() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    lazyload: "progressive",
-    //autoplay: true,
+    autoplay: true,
   };
 
   return (
     <div className={classNames("swiper-container", "mainTitle")}>
       <div className="swiper-wrapper">
-        <Slider ref={slick} {...settings} className="swiper-slide-contents">
+        <Slider {...settings} className="swiper-slide-contents">
           {makeSliderChildren(silder_PROPS)}
         </Slider>
       </div>
