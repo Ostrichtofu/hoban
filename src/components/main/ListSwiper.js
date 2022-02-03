@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 import Slider from "react-slick";
 
@@ -59,10 +60,12 @@ function ListSwiper() {
     slidesToScroll: 1,
   };
   return (
-    <div className="swiper-wrapper">
-      <Slider {...settings} className="swiper-slide">
-        {makeSwiperChildren(swiper_PROPS)}
-      </Slider>
+    <div className={classNames("swiper-container", "businessList")}>
+      <div className={classNames("swiper-wrapper")}>
+        <Slider {...settings} className="swiper-slide">
+          {makeSwiperChildren(swiper_PROPS)}
+        </Slider>
+      </div>
     </div>
   );
 }

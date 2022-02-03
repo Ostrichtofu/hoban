@@ -1,186 +1,73 @@
 .swiper-container {
   max-height: 880px;
-  /*! width: 1900px; */
-  background-image: url(../img/01_M_SCREEN_MOV_ALTER_22_2019031393028454.jpg);
-  background-size: cover;
-  background-position: center center;
   overflow: hidden;
-  background-attachment: fixed;
-  padding-bottom: 162px;
-  background-color: #eee;
+  position: relative;
 }
-.swiper-wrapper {
-  /*! width: 100%; */
-  padding-left: 10vw;
-  margin-top: 200px;
-  box-sizing: border-box;
-}
-.swiper-wrapper div strong {
-  font-size: 1.6vw;
-  margin-bottom: 0.8vw;
-  font-weight: normal;
-  color: #fff;
-}
-.swiper-wrapper div h2 {
-  max-width: 1080px;
-  font-size: 6vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  word-break: keep-all;
-  color: #fff;
-  padding-right: 10vw;
-}
-.swiper-wrapper div p {
-  font-size: 1.3em;
-  margin-top: 2vw;
-  font-weight: normal;
-  color: #fff;
-  line-height: 1.5;
-}
-.swiper-wrapper .slick-next {
-  display: none !important;
-}
-.sidemenu {
-  position: absolute;
-  height: 461px;
-  top: 150px;
-  left: -745px;
-  overflow: hidden;
-  transition: all 1s;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  z-index: 1;
-  display: none !important;
+.mainTitle {
+  .swiper-wrapper {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-dots {
+    display: inline-block !important;
+    width: auto !important;
+    bottom: 75px !important;
+    left: 10vw;
+  }
+  .slick-dots li {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  .slick-dots li button:before {
+    color: white !important;
+  }
 }
 
-@keyframes side {
-  from {
-    left: -745px;
+.slick-slide {
+  height: 880px;
+  div {
+    height: 880px;
   }
-  to {
-    left: 0px;
-  }
-}
-@keyframes sideBack {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -745px;
-  }
-}
-.side {
-  animation-name: side;
-}
-.sideBack {
-  animation-name: sideBack;
 }
 
-@keyframes sideM {
-  from {
-    left: -264px;
+.titleContents {
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 200px;
+    padding-left: 10vw;
+    padding-bottom: 162px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
   }
-  to {
-    left: 0px;
+  strong {
+    font-size: 1.6vw;
+    margin-bottom: 0.8vw;
+    font-weight: normal;
+    color: #fff;
   }
-}
-@keyframes sideMBack {
-  from {
-    left: 0px;
+  h2 {
+    max-width: 1080px;
+    font-size: 6vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-break: keep-all;
+    color: #fff;
+    padding-right: 10vw;
   }
-  to {
-    left: -264px;
+  p {
+    font-size: 1.3em;
+    margin-top: 2vw;
+    font-weight: normal;
+    color: #fff;
+    line-height: 1.5;
   }
-}
-.sideM {
-  animation-name: sideM !important;
-}
-.sideMBack {
-  animation-name: sideMBack;
-}
-
-@keyframes sideTab {
-  from {
-    left: -8px;
-  }
-  to {
-    left: 256px;
-  }
-}
-@keyframes sideTabBack {
-  from {
-    left: 256px;
-  }
-  to {
-    left: -8px;
-  }
-}
-.sideTab {
-  animation-name: sideTab !important;
-}
-.sideTabBack {
-  animation-name: sideTabBack;
-}
-
-.sidemenu ul {
-  display: inline-block;
-  background-color: #aaa;
-  border-top: 8px solid #575553;
-  border-bottom: 8px solid #575553;
-}
-.sidemenu ul li {
-  border-right: 8px solid #575553;
-  float: left;
-}
-.sidemenu ul li > a {
-  display: block;
-  width: 240px;
-  height: 445px;
-  background-color: #fff;
-  text-align: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.sidemenu .control {
-  background-color: #ee7500;
-  line-height: 2.3;
-  color: #fff;
-  text-align: center;
-  width: 120px;
-  height: 40px;
-  transform: rotate(-90deg) translate(-80px, 40px);
-  transform-origin: left bottom;
-  font-weight: lighter;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  float: right;
-}
-.sidemenu .control::after {
-  content: "";
-  // background-image: url(../img/ì‚­ì œí•„5.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 10px;
-  display: inline-block;
-  height: 25px;
-  margin: 8px 0px 0px 8px;
-  vertical-align: -8px;
-  transform: rotate(90deg);
-}
-.controlAni {
-  background-color: #575553 !important;
-}
-.controlAni::after {
-  content: "";
-  // background-image: url(../img/ì‚­ì œí•„5.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 10px;
-  display: inline-block;
-  height: 25px;
-  margin: 8px 0px 0px 20px !important;
-  vertical-align: -8px;
-  transform: rotate(270deg) !important;
 }
