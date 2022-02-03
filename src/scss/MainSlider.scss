@@ -1,60 +1,73 @@
 .swiper-container {
-  /*! width: 1900px; */
-  // background-size: cover;
-  // background-position: center center;
-  // overflow: hidden;
-  // background-attachment: fixed;
+  max-height: 880px;
   overflow: hidden;
-  padding-bottom: 162px;
-  background-color: #eee;
-}
-.mainTitle .swiper-wrapper {
-  /*! width: 100%; */
-  padding-left: 10vw;
-  margin-top: 200px;
-  box-sizing: border-box;
   position: relative;
 }
-.mainTitle .swiper-wrapper div strong {
-  font-size: 1.6vw;
-  margin-bottom: 0.8vw;
-  font-weight: normal;
-  color: #fff;
+.mainTitle {
+  .swiper-wrapper {
+    box-sizing: border-box;
+    position: relative;
+  }
+  .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
+  }
+  .slick-dots {
+    display: inline-block !important;
+    width: auto !important;
+    bottom: 75px !important;
+    left: 10vw;
+  }
+  .slick-dots li {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  .slick-dots li button:before {
+    color: white !important;
+  }
 }
-.mainTitle .swiper-wrapper div h2 {
-  max-width: 1080px;
-  font-size: 6vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  word-break: keep-all;
-  color: #fff;
-  padding-right: 10vw;
+
+.slick-slide {
+  height: 880px;
+  div {
+    height: 880px;
+  }
 }
-.mainTitle .swiper-wrapper div p {
-  font-size: 1.3em;
-  margin-top: 2vw;
-  font-weight: normal;
-  color: #fff;
-  line-height: 1.5;
+
+.titleContents {
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 200px;
+    padding-left: 10vw;
+    padding-bottom: 162px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+  }
+  strong {
+    font-size: 1.6vw;
+    margin-bottom: 0.8vw;
+    font-weight: normal;
+    color: #fff;
+  }
+  h2 {
+    max-width: 1080px;
+    font-size: 6vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-break: keep-all;
+    color: #fff;
+    padding-right: 10vw;
+  }
+  p {
+    font-size: 1.3em;
+    margin-top: 2vw;
+    font-weight: normal;
+    color: #fff;
+    line-height: 1.5;
+  }
 }
-.mainTitle .swiper-wrapper .slick-next {
-  display: none !important;
-}
-.mainTitle .slick-prev {
-  display: none !important;
-}
-.mainTitle .slick-dots {
-  display: inline-block !important;
-  width: auto !important;
-  bottom: -75px !important;
-}
-.mainTitle .slick-dots li {
-  width: 14px !important;
-  height: 14px !important;
-}
-.mainTitle .slick-dots li button:before {
-  color: white !important;
-}
-// .swiper-slide-BG {
-//   max-height: 880px;
-// }
