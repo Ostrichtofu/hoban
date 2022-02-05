@@ -83,7 +83,7 @@
   max-height: 400px;
   text-align: center;
   width: 78%;
-  padding: 36px 0;
+  padding: 36px 0 36px 36px;
   float: right;
   box-sizing: border-box;
   .swiper-wrapper,
@@ -175,6 +175,8 @@
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
+  padding-right: 36px;
+  box-sizing: border-box;
 }
 .newsListContents {
   position: relative;
@@ -246,6 +248,8 @@
   float: right;
   box-sizing: border-box;
   overflow: hidden;
+  padding-left: 36px;
+  box-sizing: border-box;
 }
 .storyListContents {
   display: inline-block;
