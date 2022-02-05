@@ -5,37 +5,44 @@ import Slider from "react-slick";
 const swiper_PROPS = [
   {
     title: "주택사업",
-    graphicLink: " ",
-    URL: " ",
+    graphicLink:
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/bsn_icn_1.png",
+    URL: "",
   },
   {
     title: "건축사업",
-    graphicLink: " ",
+    graphicLink:
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/bsn_icn_2.png",
     URL: " ",
   },
   {
     title: "토목사업",
-    graphicLink: " ",
+    graphicLink:
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/bsn_icn_3.png",
     URL: " ",
   },
   {
     title: "임대사업",
-    graphicLink: " ",
+    graphicLink:
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/bsn_icn_4.png",
     URL: " ",
   },
   {
     title: "금융투자업",
-    graphicLink: " ",
+    graphicLink:
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/bsn_icn_5.png",
     URL: " ",
   },
   {
     title: "스포츠레저",
-    graphicLink: " ",
+    graphicLink:
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/bsn_icn_6.png",
     URL: " ",
   },
   {
     title: "방송미디어",
-    graphicLink: " ",
+    graphicLink:
+      "https://raw.githubusercontent.com/Ostrichtofu/Images/master/hoban/bsn_icn_7.png",
     URL: " ",
   },
 ];
@@ -43,12 +50,10 @@ const swiper_PROPS = [
 function ListSwiper() {
   function makeSwiperChildren(swiperArr) {
     return swiperArr.map((element, swiperIndex) => (
-      <li key={swiperIndex}>
-        <a href={element.URL}>
-          <h4>{element.title}</h4>
-          <img></img>
-        </a>
-      </li>
+      <a href={element.URL} key={swiperIndex} className="businessListContents">
+        <h4>{element.title}</h4>
+        <img src={element.graphicLink} />
+      </a>
     ));
   }
 
@@ -58,6 +63,21 @@ function ListSwiper() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
   return (
     <div className={classNames("swiper-container", "businessList")}>
