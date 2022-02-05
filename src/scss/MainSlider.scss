@@ -2,6 +2,7 @@
   height: 50vw;
   overflow: hidden;
   position: relative;
+  max-height: 800px;
 }
 .mainTitle {
   .swiper-wrapper {
@@ -18,7 +19,7 @@
   .slick-dots {
     display: inline-block !important;
     width: auto !important;
-    bottom: 4vw !important;
+    bottom: 6.5vw !important;
     left: 10vw;
   }
   .slick-dots li {
@@ -28,15 +29,12 @@
   .slick-dots li button:before {
     color: white !important;
   }
-  .slick-slider {
+  .slick-list,
+  .slick-track,
+  .slick-slider,
+  .slick-slide,
+  .slick-slide div {
     height: 100%;
-  }
-}
-
-.slick-slide {
-  height: 880px;
-  div {
-    height: 880px;
   }
 }
 

@@ -75,7 +75,7 @@ function ListSwiper() {
         breakpoint: 768,
         setting: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
     ],
