@@ -143,9 +143,8 @@
     max-width: 1280px;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.6);
-    margin-top: 50px;
+    margin-top: 60px;
     padding: 36px 3vw 72px;
-    width: 100%;
   }
   > div::after {
     content: "";
@@ -192,7 +191,7 @@
       a {
         line-height: 1.2;
         color: #b4b4b4;
-        padding: 16px 24px 16px 16px;
+        padding: 16px 48px 16px 16px;
       }
     }
     li:hover {
