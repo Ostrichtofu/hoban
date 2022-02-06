@@ -98,7 +98,7 @@ function Footer() {
   const renderFooterMenus = (contentsArr) => {
     return contentsArr.map((element, footerMenuIndex) => (
       <li key={footerMenuIndex}>
-        <h4>{element.title}</h4>
+        <h5>{element.title}</h5>
         <ul>{renderSubMenus(element.subMenus, footerMenuIndex)}</ul>
       </li>
     ));
@@ -129,17 +129,19 @@ function Footer() {
         <ul className="button">{MakeButton(siteMap_PROPS.right)}</ul>
       </div>
       <div className="info">
-        <h1>호반건설</h1>
-        <ul>{MakeButton(siteMap_PROPS.left)}</ul>
-        <ul className="button">{MakeButton(siteMap_PROPS.right)}</ul>
-        <address>
-          (06768) 서울시 서초구 양재대로2길 18 호반파크 2관(우면동 786)
-          <br />
-          분양문의: 1588-9798 / TEL 02-6177-0000, FAX 02-6177-0010
-        </address>
-        <p className="copyright">
-          COPYRIGHT ⓒ 2017 HOBAN CONSTRUCTION LTD., All RIGHT RESERVED.
-        </p>
+        <div>
+          <h1>호반건설</h1>
+          <ul className="corporation">{MakeButton(info_PROPS.left)}</ul>
+          <ul className="button">{MakeButton(info_PROPS.right)}</ul>
+          <address>
+            (06768) 서울시 서초구 양재대로2길 18 호반파크 2관(우면동 786)
+            <br />
+            분양문의: 1588-9798 / TEL 02-6177-0000, FAX 02-6177-0010
+          </address>
+          <p className="copyright">
+            COPYRIGHT ⓒ 2017 HOBAN CONSTRUCTION LTD., All RIGHT RESERVED.
+          </p>
+        </div>
       </div>
     </footer>
   );
