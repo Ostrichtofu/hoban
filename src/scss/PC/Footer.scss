@@ -1,0 +1,228 @@
+.footer {
+  margin: 0 auto;
+  color: #575553;
+  width: 100%;
+  .button {
+    float: right;
+    width: 17%;
+    li {
+      border: 1px solid #dae1e6;
+      margin-bottom: 8px;
+      color: #b4b4b4;
+      position: relative;
+      right: 0;
+      cursor: pointer;
+    }
+    > li:nth-of-type(4) {
+      font-weight: bold;
+    }
+    a {
+      word-break: keep-all;
+    }
+    li > a {
+      text-align: left;
+      padding: 16px 0 16px 16px;
+      display: block;
+      font-size: 0.8em;
+      color: #89898a;
+    }
+    li a:hover {
+      color: #ee7500;
+    }
+    li a::after {
+      content: "";
+      float: right;
+      width: 24px;
+      height: 8px;
+      display: block;
+      text-align: right;
+      background-image: url(../../img/bg_arrow_right.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      transition: transform 0.5s;
+      filter: opacity(0.5);
+    }
+    li:nth-of-type(4) a::after {
+      display: none;
+    }
+    a:hover::after {
+      background-position-y: -8px;
+      transform: translate(-10px);
+      filter: opacity(1);
+    }
+  }
+}
+
+.sitemap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 3vw;
+  position: relative;
+  margin-top: 180px;
+  .map {
+    float: left;
+    width: 83%;
+    > li {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      margin-right: 16px;
+      margin-bottom: 30px;
+    }
+    > li:nth-last-child(1) {
+      margin-right: 0px;
+    }
+    h5 {
+      font-weight: bold;
+      font-size: 0.9em;
+      width: 110px;
+      margin-bottom: 15px;
+      color: #89898a;
+    }
+    ul {
+      display: inline-block;
+      a {
+        width: 114px;
+        padding: 8px 0px;
+        font-size: 0.8em;
+        font-weight: lighter;
+        box-sizing: border-box;
+        display: block;
+        cursor: pointer;
+        color: #89898a;
+      }
+      a:hover {
+        color: #ee7500;
+      }
+    }
+  }
+}
+
+.sitemap::before {
+  content: "";
+  width: calc(100% - 6vw);
+  box-sizing: border-box;
+  margin: 0 3vw;
+  height: 1px;
+  background-color: #ececec;
+  position: absolute;
+  top: -36px;
+  left: 0;
+  display: block;
+}
+.sitemap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+// family site
+.sitemap ul.button li.family {
+  margin-top: 26px;
+  background-color: #eee;
+}
+.sitemap ul.button li.family > a {
+  color: #333;
+}
+.sitemap ul.button li.family > a::after {
+  //   background-image: url(../img/arw_xxs.png);
+  background-repeat: no-repeat;
+  background-position: 5px 2px;
+}
+.sitemap ul.button li.family > a:hover::after {
+  transform: translate(0px);
+}
+
+.info {
+  width: 100%;
+  background-color: #717171;
+  > div {
+    max-width: 1280px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 60px;
+    padding: 36px 3vw 72px;
+  }
+  > div::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  h1 {
+    position: absolute;
+    font-size: 1.5em;
+    background-image: url(../../img/logo_footer_n2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -999%;
+    width: 12%;
+  }
+  .corporation {
+    padding-left: 20%;
+    float: left;
+    width: 50%;
+    padding-bottom: 16px;
+    li {
+      display: inline-block;
+      padding-right: 12px;
+      padding-bottom: 8px;
+      a {
+        font-size: 0.8em;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.6);
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    li:nth-child(3) a {
+      color: #fff;
+    }
+  }
+  .button {
+    li {
+      border: 1px solid #b4b4b4;
+      color: #b4b4b4;
+      box-sizing: border-box;
+      a {
+        line-height: 1.2;
+        color: #b4b4b4;
+        padding: 16px 48px 16px 16px;
+      }
+    }
+    li:hover {
+      border: 1px solid #ee7500;
+    }
+    a::after {
+      content: "";
+      top: calc(50% - 4px) !important;
+      filter: brightness(1.5) !important;
+      transition: transform 0.5s;
+    }
+    a:hover::after {
+      filter: opacity(1) brightness(1) !important;
+    }
+  }
+  address {
+    padding-left: 20%;
+    line-height: 1.5;
+    font-size: 0.8em;
+    float: left;
+  }
+  p {
+    padding-left: 20%;
+    float: left;
+    font-size: 0.8em;
+    padding-top: 16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+}
+
+.info .button + ul li.family {
+  margin-top: 39px;
+}

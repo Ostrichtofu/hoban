@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import Slider from "react-slick";
-import "../../scss/MainSlider.scss";
+import "../../../scss/PC/MainSlider.scss";
 
 const silder_PROPS = [
   {

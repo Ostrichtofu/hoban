@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../scss/Header.scss";
+import "../../scss/PC/Header.scss";
 import classnames from "classnames";
 
 const contents_PROPS = [
