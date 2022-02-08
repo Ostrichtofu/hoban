@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/Footer.scss";
+import "../../scss/PC/Footer.scss";
 
 const siteMap_PROPS = {
   left: [

@@ -3,7 +3,7 @@ import ListSwiper from "./ListSwiper";
 import TextList from "./TextList";
 import ImageList from "./ImageList";
 import BoxGroup from "./BoxGroup";
-import "../../scss/MainContents.scss";
+import "../../../scss/PC/MainContents.scss";
 
 function Contents() {
   const mainContentsTitie_PROPS = {

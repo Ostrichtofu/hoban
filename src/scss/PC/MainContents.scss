@@ -54,7 +54,7 @@
     height: 16px;
     vertical-align: 2px;
     display: inline-block;
-    background-image: url(../img/arw_s.png);
+    background-image: url(../../img/arw_s.png);
     margin-left: 10px;
     transition: margin-left 0.5s, color 0.5s, transform 0.5s;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@
   }
   .slick-arrow::before {
     content: ">" !important;
-    background-image: url(../img/arw_right.png);
+    background-image: url(../../img/arw_right.png);
     background-size: contain;
     font-family: initial !important;
     font-size: 100% !important;
@@ -114,7 +114,7 @@
     background-repeat: no-repeat;
   }
   .slick-prev::before {
-    background-image: url(../img/arw_left.png);
+    background-image: url(../../img/arw_left.png);
   }
   .slick-list {
     width: calc(100% - 60px);
@@ -327,6 +327,7 @@
     right: 4.5vw;
     bottom: 4.5vw;
     opacity: 0.25;
+    width: 35%;
   }
   p {
     line-height: 1.5;
